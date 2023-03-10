@@ -1,0 +1,140 @@
+.hidden-menu-container {
+  width: 60vw;
+  height: 100%;
+
+  position: fixed;
+  top: 0;
+  z-index: 2;
+  background-color: var(--main-black);
+
+  transform: translateX(100rem);
+  opacity: 0;
+  transition: all .5s ease-out;
+  margin-left: -2.4rem;
+}
+
+.hidden-menu {
+  height: inherit;
+  color: var(--main-grey);
+  font-size: 3.6rem;
+
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+
+  margin-top: -3.8rem;
+}
+
+.hidden-links:not(:last-child) {
+  margin-bottom: 3.4rem;
+}
+
+.hidden-links {
+  transition: color .4s ease;
+}
+
+.hidden-links:hover {
+  color: var(--white);
+}
+
+#burger-menu {
+  position: relative;
+  z-index: 10;  
+  display: none;
+}
+
+.burger-menu-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  position: fixed;
+  right: 0;
+  z-index: 3;
+
+  width: 6.3rem;
+  height: 7.1rem;
+  background-color: var(--white);
+
+  transition: all .4s ease;
+  margin-top: -1.2rem;
+}
+
+.burger-menu-container:hover{
+  background-color: var(--hover-grey);
+  cursor: pointer;
+}
+
+.burger-menu-icon {
+  display: inline-block;
+  background-color: var(--main-grey);
+  margin-top: -2.2rem;
+
+  width: 3.1rem;
+  height: .51rem;
+  z-index: 2;
+  border-radius: 1px;
+  transition: color .4s ease;
+}
+
+.burger-menu-icon:before,
+.burger-menu-icon:after {
+  content: "";
+  display: inline-block;
+  background-color: inherit;
+
+  width: 3.1rem;
+  height: .51rem;
+  z-index: 2;
+  border-radius: 1px;
+}
+
+.burger-menu-icon:before {
+  margin-top: 1.1rem;
+}
+
+.burger-menu-container:hover .burger-menu-icon {
+  background-color: var(--main-black);
+  cursor: pointer;
+
+}
+
+#burger-menu:checked ~ .hidden-menu-container {
+  transform: translateX(0);
+  opacity: 1;
+}
+
+#burger-menu:checked ~ .burger-menu-container .burger-menu-icon {
+  transform: rotateZ(45deg) scale(1.02);
+  margin-top: 3px;
+  margin-right: 1px;
+  height: 1.05rem;
+  width: 3.7rem;
+  border-radius: 3px;
+  background-color: var(--white);
+}
+
+#burger-menu:checked ~ .burger-menu-container:hover .burger-menu-icon {
+  background-color: var(--main-black);
+}
+
+#burger-menu:checked ~ .burger-menu-container{
+  background-color: transparent;
+}
+
+#burger-menu:checked ~ .burger-menu-container:hover{
+  background-color: var(--hover-grey);
+}
+
+#burger-menu:checked ~ .burger-menu-container .burger-menu-icon::before {
+  transform: rotateZ(-90deg) translate(11px, 0);
+  height: 1.05rem;
+  width: 3.7rem;
+  border-radius: 3px;
+}
+
+#burger-menu:checked ~ .burger-menu-container .burger-menu-icon:after {
+  display: none;
+}
+
