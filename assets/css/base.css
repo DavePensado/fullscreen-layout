@@ -5,6 +5,10 @@
 }
 
 main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  
   width: 60%;
   position: relative;
   z-index: 0;
@@ -19,12 +23,18 @@ html {
 body {
   display: flex;
   font-family: 'Montserrat', sans-serif;
-  height: 1000px;
 }
 
 a {
   color: inherit;
   text-decoration: none;
+}
+
+.dividing-line {
+  border: none;
+  border-top: 1px solid var(--line-grey);
+  opacity: .6;
+  margin: 2rem 0;
 }
 
 :root {
@@ -34,4 +44,5 @@ a {
   --dark-grey: #616161;
   --light-grey: #f1f1f1;
   --hover-grey: #ccc;
+  --line-grey: #eee;
 }
