@@ -13,9 +13,9 @@
 .my-portfolio-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(9, 10.4rem);
+  grid-template-rows: repeat(9, 11.8rem);
   grid-column-gap: 1.5rem;
-  grid-row-gap: 1.5rem;
+  grid-row-gap: 1.1rem;
 }
 
 .grid-img {
@@ -57,5 +57,5 @@
 .my-portfolio-grid :nth-child(7) {
   grid-column: 2 / 3;
   grid-row: 8 / 10;
-  height: 105%;
+  height: 110%;
 }

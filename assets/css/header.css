@@ -6,8 +6,10 @@
 
 .photo-girl {
   min-width: 51.7rem;
-  height: 105vh;
-  object-position: 0 -1.6rem;
+  min-height: 105vh;
+  max-height: 68rem;
+  object-position: 0 -3.5rem;
+  object-fit: cover;
   position: fixed;
   z-index: -1;
 }
