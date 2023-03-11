@@ -17,6 +17,9 @@
   align-items: center;
 }
 
+.review:not(:last-child) {
+  margin-bottom: 3.5rem;
+}
 
 .review-img {
   width: 8rem;
@@ -32,10 +35,12 @@
   justify-content: space-around;
   font-size: 1.4rem;
   margin-left: 1.6rem;
+  margin-top: -1rem;
 }
 
 .review-header {
   display: flex;
+  align-items: center;
 }
 
 .review-header-heading {
@@ -49,5 +54,5 @@
 }
 
 .review-text {
-  /* margin-top: 2.4rem; */
+  margin-top: 2rem;
 }
