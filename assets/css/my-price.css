@@ -1,0 +1,77 @@
+.price {
+  margin-top: 4rem;
+}
+
+.price-heading {
+  font-size: 2.4rem;
+  margin: 0 0 3rem;
+}
+
+.tabels-container {
+  display: flex;
+  justify-content: space-around;
+
+  font-size: 1.5rem;
+}
+
+.price-table {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  text-align: center;
+  flex: 1 ;
+
+  box-shadow: 0px 2px 8px 3px rgba(0, 0, 0, 0.178);
+  transition: all .2s ease;
+}
+
+.price-table:hover {
+  box-shadow: 0px 2px 11px 3px rgba(0, 0, 0, 0.308);
+}
+
+.table-heading {
+  width: 100%;
+  padding: 3.8rem 0;
+  background-color: var(--dark-grey);
+  color: var(--white);
+  font-size: 2.4rem;
+}
+
+
+.price-table:nth-child(2) {
+  margin-left: 1.5rem;
+}
+
+.pro {
+  background-color: var(--main-black);
+}
+
+.table-item {
+  padding: 2rem 0;
+  border-bottom: 1px solid var(--border-grey);
+  width: 100%;  
+}
+
+
+.table-price .value{
+  font-size: 3rem;
+  margin-top: 1rem;
+}
+
+.table-price .month {
+  opacity: .6;
+  margin-top: 2rem;
+}
+
+.tabel-button {
+  background-color: var(--light-grey);
+  padding: 2.5rem 0;
+}
+
+.tabel-button button {
+  background-color: var(--white);
+  border: none;
+  font-size: 1.5rem;
+  font-family: inherit;
+  padding: 1.5rem 2.4rem;
+}
