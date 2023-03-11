@@ -1,0 +1,53 @@
+.my-reputation {
+  margin-top: 6rem;
+}
+
+.my-reputation-heading {
+  font-size: 2.4rem;
+  margin: 0 0 3rem;
+}
+
+.review-container {
+  display: flex;
+  flex-flow: column;
+}
+
+.review {
+  display: flex;
+  align-items: center;
+}
+
+
+.review-img {
+  width: 8rem;
+  height: 8rem;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 50%;
+}
+
+.review-content { 
+  display: flex;
+  flex-flow: column;
+  justify-content: space-around;
+  font-size: 1.4rem;
+  margin-left: 1.6rem;
+}
+
+.review-header {
+  display: flex;
+}
+
+.review-header-heading {
+  color: var(--main-black);
+  font-size: 1.7rem;
+}
+
+.review-header-sub-heading {
+  margin-left: 1.6rem;
+
+}
+
+.review-text {
+  /* margin-top: 2.4rem; */
+}
