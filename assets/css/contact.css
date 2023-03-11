@@ -1,0 +1,66 @@
+.contact {
+  margin-top: 8.5rem;
+  color: var(--main-grey);
+  font-size: 1.5rem;
+}
+
+.contact-heading {
+  font-size: 3rem;
+  margin: 1rem 0 2.5rem;
+}
+
+.contacts-data-container {
+  display: flex;  
+  align-items: end;
+  margin-left: 1rem;
+}
+
+.contacts-data-container:not(:last-child) {
+  margin-bottom: 2.5rem;
+}
+
+.contacts-data-container :nth-child(1) {
+  text-align: center;
+  width: 3rem;
+  font-size: 3rem;
+}
+
+.data-text {
+  margin-left: 2rem; 
+}
+
+.contact-img {
+  width: 100%;
+  filter: grayscale(75%);
+  margin-top: 5rem;
+}
+
+.contact-form {
+  margin-top: 4rem;
+}
+
+.get-in-touch-text {
+  margin-bottom: 2rem;
+}
+
+.contact-form form {
+  display: flex;
+  flex-flow: column;
+}
+
+.contact-form form input{
+  padding: 1.6rem 1rem;
+  font-size: 1.5rem;
+  font-family: inherit;
+  font-weight: 400;
+  border:1px solid var(--hover-grey);
+}
+
+.contact-form form :not(:last-child){
+  margin-bottom: 1.8rem;
+}
+
+.form-btn {
+  width: 20.9rem;
+  text-transform: uppercase;
+}

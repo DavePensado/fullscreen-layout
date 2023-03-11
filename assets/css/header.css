@@ -5,11 +5,15 @@
 }
 
 .photo-girl {
-  min-width: 51.7rem;
-  min-height: 105vh;
-  max-height: 68rem;
-  object-position: 0 -3.5rem;
-  object-fit: cover;
+  background-image: url(../img/profile_girl.jpg);
+  background-position: center;
+  background-size: cover;
+  /* background-position: 0 -3.5rem; */
+  width: 40%;
+  min-height: 100%;
+  /* max-height: 68rem; */
+
+  object-fit:cover;
   position: fixed;
   z-index: -1;
 }
