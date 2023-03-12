@@ -38,6 +38,8 @@ a {
   margin: 2rem 0;
 }
 
+/* Variables */
+
 :root {
   --white: white;
   --main-black: #000000;
