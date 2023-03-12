@@ -10,9 +10,19 @@
   }
 }
 
+@media screen and (min-width: 1400px) {
+  #burger-menu:checked ~ .burger-menu-container .burger-menu-icon::before {
+    transform: rotateZ(-90deg) translate(11px, 0);
+  }
+}
+
 @media screen and (min-width: 1600px) {
   html {
     font-size: 90%;
+  }
+
+  #burger-menu:checked ~ .burger-menu-container .burger-menu-icon::before {
+    transform: rotateZ(-90deg) translate(15px, 0);
   }
 }
 
@@ -20,11 +30,19 @@
   html {
     font-size: 100%;
   }
+
+  #burger-menu:checked ~ .burger-menu-container .burger-menu-icon::before {
+    transform: rotateZ(-90deg) translate(19px, 0);
+  }
 }
 
 @media screen and (min-width: 2400px) {
   html {
     font-size: 110%;
+  }
+
+  #burger-menu:checked ~ .burger-menu-container .burger-menu-icon::before {
+    transform: rotateZ(-90deg) translate(20px, 0);
   }
 }
 
@@ -32,11 +50,18 @@
   html {
     font-size: 130%;
   }
+  #burger-menu:checked ~ .burger-menu-container .burger-menu-icon::before {
+    transform: rotateZ(-90deg) translate(22px, 0);
+  }
 }
 
 @media screen and (min-width: 3800px) {
   html {
     font-size: 150%;
+  }
+
+  #burger-menu:checked ~ .burger-menu-container .burger-menu-icon::before {
+    transform: rotateZ(-90deg) translate(24px, 0);
   }
 }
 
